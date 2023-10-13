@@ -1,0 +1,5 @@
+Interesting idea
+https://stackoverflow.com/questions/51374649/using-async-functions-to-await-user-input-from-onclick
+
+The key to preventing the addition of new addEventListeners was this:
+"{ once: true }"

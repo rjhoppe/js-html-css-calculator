@@ -16,31 +16,31 @@
       <button id="7" class="calc__button__square" onclick="clickNumbers(7)">7</button>
       <button id="8" class="calc__button__square" onclick="clickNumbers(8)">8</button>
       <button id="9" class="calc__button__square" onclick="clickNumbers(9)">9</button>
-      <button class="calc__button__circle">/</button>
+      <button class="calc__button__circle" onclick="calcInit(operation='division')">/</button>
     </div>
     <div class="button__row">
       <button class="calc__button__circle">√</button>
       <button class="calc__button__square" onclick="clickNumbers(4)">4</button>
       <button class="calc__button__square" onclick="clickNumbers(5)">5</button>
       <button class="calc__button__square" onclick="clickNumbers(6)">6</button>
-      <button class="calc__button__circle">X</button>
+      <button class="calc__button__circle" onclick="calcInit(operation='multiply')">X</button>
     </div>
     <div class="button__row">
       <button class="calc__button__circle">CE</button>
       <button class="calc__button__square" onclick="clickNumbers(1)">1</button>
       <button class="calc__button__square" onclick="clickNumbers(2)">2</button>
       <button class="calc__button__square" onclick="clickNumbers(3)">3</button>
-      <button class="calc__button__circle">-</button>
+      <button class="calc__button__circle" onclick="calcInit(operation='sub')">-</button>
     </div>
     <div class="button__row">
       <button class="calc__button__circle" onclick="clickClear()">C</button>
-      <button class="calc__button__square">0</button>
+      <button class="calc__button__square" onclick="clickNumbers(0)">0</button>
       <button class="calc__button__square">.</button>
       <button class="calc__button__square">+/-</button>
-      <button class="calc__button__circle">+</button>
+      <button id="sum" class="calc__button__circle" onclick="calcInit(operation='sum')">+</button>
     </div>
     <div class="button__row">
-      <button class="calc__button__equals">=</button>
+      <button id="equals" class="calc__button__equals">=</button>
     </div>
   </div>
 <script src="script.js"></script>
