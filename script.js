@@ -44,7 +44,6 @@ function equalOperation(numOne, operation) {
       let sum = parseInt(numOne)+parseInt(numTwo);
       document.getElementById('calc__input').innerHTML = sum;
       break;
-    // Add other case statements below
     case 'sub':
       sub = parseInt(numOne) - parseInt(numTwo);
       document.getElementById('calc__input').innerHTML = sub;
@@ -54,9 +53,14 @@ function equalOperation(numOne, operation) {
       document.getElementById('calc__input').innerHTML = multiply;
       break;
     case 'division':
-      division = parseInt(numOne)/parseInt(numTwo);
-      document.getElementById('calc__input').innerHTML = division;
-      break;
+      if (parseInt(numTwo) === 0) {
+        alert('C\'mon... why would you want to do that?')
+        break;
+      } else {
+        division = parseInt(numOne)/parseInt(numTwo);
+        document.getElementById('calc__input').innerHTML = division.toFixed(6);
+        break;
+      }
   }
 
 }
